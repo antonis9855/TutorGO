@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses - TutorGo</title>
+    <title>Books - TutorGo</title>
     
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/theme.css">
@@ -45,8 +45,8 @@
                 </button>
                 <div class="nav-links" id="navLinks">
                     <a href="index.html">Home</a>
-                    <a href="courses.html" class="active">Courses</a>
-                    <a href="books.html">Books</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="books.html" class="active">Books</a>
                     <a href="register.html">Register</a>
                     <a href="about.html">About</a>
                 </div>
@@ -57,8 +57,8 @@
     <main>
         <div class="container">
             <section class="page-header glass">
-                <h1>Our Courses</h1>
-                <p>Explore our comprehensive collection of computer science courses</p>
+                <h1>Recommended Books</h1>
+                <p>Expand your knowledge with our curated selection of computer science books</p>
             </section>
 
             <section class="filters-section">
@@ -74,26 +74,17 @@
                         </select>
                     </div>
                     <div class="filter-group">
-                        <label for="levelFilter">Level:</label>
-                        <select id="levelFilter">
-                            <option value="all">All Levels</option>
-                            <option value="beginner">Beginner</option>
-                            <option value="intermediate">Intermediate</option>
-                            <option value="advanced">Advanced</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
                         <label for="searchInput">Search:</label>
-                        <input type="text" id="searchInput" placeholder="Search courses...">
+                        <input type="text" id="searchInput" placeholder="Search books...">
                     </div>
                 </div>
             </section>
 
-            <section class="courses-list-section">
-                <div class="courses-grid" id="coursesList">
+            <section class="books-list-section">
+                <div class="books-grid" id="booksList">
                 </div>
                 <div id="noResults" class="no-results" style="display: none;">
-                    <p>No courses found matching your criteria.</p>
+                    <p>No books found matching your criteria.</p>
                 </div>
             </section>
         </div>
@@ -125,7 +116,7 @@
         </div>
     </footer>
 
-    <script src="assets/js/data/courses.js"></script>
+    <script src="assets/js/data/books.js"></script>
     <script src="assets/js/ui/menu.js"></script>
     <script src="assets/js/ui/responsive.js"></script>
     <script src="assets/js/app.js"></script>

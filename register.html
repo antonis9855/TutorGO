@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - TutorGo</title>
+    
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav class="glass">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 48 48" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="5" opacity="0.9"/>
+                            <circle cx="32" cy="16" r="4" opacity="0.8"/>
+                            <circle cx="16" cy="32" r="4" opacity="0.7"/>
+                            <circle cx="32" cy="32" r="5" opacity="0.85"/>
+                            <circle cx="24" cy="8" r="2" opacity="1"/>
+                            <circle cx="8" cy="24" r="2" opacity="0.9"/>
+                            <circle cx="40" cy="24" r="2" opacity="0.9"/>
+                            <circle cx="24" cy="40" r="2" opacity="1"/>
+                        </svg>
+                    </div>
+                    <span>TutorGo</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="books.html">Books</a>
+                    <a href="register.html" class="active">Register</a>
+                    <a href="about.html">About</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="page-header glass">
+                <h1>Join TutorGo</h1>
+                <p>Create your account and start learning today</p>
+            </section>
+
+            <section class="register-container">
+                <div class="register-form glass">
+                    <form id="registerForm" novalidate>
+                        <div class="form-section">
+                            <h2>Personal Information</h2>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                    <span class="error-message"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                    <span class="error-message"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="birthDate">Date of Birth *</label>
+                                <input type="date" id="birthDate" name="birthDate" required>
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <div class="radio-group">
+                                    <label><input type="radio" name="gender" value="male"> Male</label>
+                                    <label><input type="radio" name="gender" value="female"> Female</label>
+                                    <label><input type="radio" name="gender" value="other"> Other</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h2>Account Details</h2>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="username">Username *</label>
+                                <input type="text" id="username" name="username" required minlength="4">
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="password">Password *</label>
+                                    <input type="password" id="password" name="password" required minlength="8">
+                                    <span class="error-message"></span>
+                                    <small>At least 8 characters, 1 uppercase, 1 number</small>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="confirmPassword">Confirm Password *</label>
+                                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                                    <span class="error-message"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h2>Learning Preferences</h2>
+                            
+                            <div class="form-group">
+                                <label for="experience">Programming Experience</label>
+                                <select id="experience" name="experience">
+                                    <option value="">Select your level</option>
+                                    <option value="none">No experience</option>
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Areas of Interest *</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="interests" value="programming"> Programming</label>
+                                    <label><input type="checkbox" name="interests" value="networks"> Networks</label>
+                                    <label><input type="checkbox" name="interests" value="security"> Security</label>
+                                    <label><input type="checkbox" name="interests" value="databases"> Databases</label>
+                                </div>
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="goals">Learning Goals</label>
+                                <textarea id="goals" name="goals" rows="4" placeholder="What do you want to achieve with TutorGo?"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h2>Terms and Conditions</h2>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    I agree to the Terms and Conditions *
+                                </label>
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    Subscribe to newsletter for updates and promotions
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="cta-button">Create Account</button>
+                            <button type="reset" class="secondary-button">Reset Form</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="register-info glass">
+                    <h3>Why Register?</h3>
+                    <ul>
+                        <li>Access to all courses and materials</li>
+                        <li>Track your learning progress</li>
+                        <li>Earn certificates</li>
+                        <li>Join our community</li>
+                        <li>Get personalized recommendations</li>
+                    </ul>
+                    
+                    <div class="already-member">
+                        <p>Already have an account?</p>
+                        <a href="#" class="link-button">Sign In</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content glass">
+            <h2>Confirm Your Information</h2>
+            <div id="confirmationDetails"></div>
+            <div class="modal-actions">
+                <button id="confirmSubmit" class="cta-button">Confirm & Submit</button>
+                <button id="cancelSubmit" class="secondary-button">Go Back</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="glass">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TutorGo</h4>
+                    <p>Your path to mastering computer science</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="courses.html">Courses</a>
+                    <a href="books.html">Books</a>
+                    <a href="about.html">About Us</a>
+                    <a href="register.html">Sign Up</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@tutorgo.com</p>
+                    <p>Phone: +30 123 456 7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TutorGo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/ui/menu.js"></script>
+    <script src="assets/js/ui/responsive.js"></script>
+    <script src="assets/js/forms/register-form.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

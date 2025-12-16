@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses - TutorGo</title>
+    <title>Course Details - TutorGo</title>
     
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/theme.css">
@@ -45,7 +45,7 @@
                 </button>
                 <div class="nav-links" id="navLinks">
                     <a href="index.html">Home</a>
-                    <a href="courses.html" class="active">Courses</a>
+                    <a href="courses.html">Courses</a>
                     <a href="books.html">Books</a>
                     <a href="register.html">Register</a>
                     <a href="about.html">About</a>
@@ -56,46 +56,68 @@
 
     <main>
         <div class="container">
-            <section class="page-header glass">
-                <h1>Our Courses</h1>
-                <p>Explore our comprehensive collection of computer science courses</p>
-            </section>
+            <div class="course-detail-container">
+                <aside class="course-sidebar glass">
+                    <div class="course-info-box">
+                        <h3>Course Information</h3>
+                        <div class="info-item">
+                            <strong>Duration:</strong>
+                            <span id="courseDuration">-</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Level:</strong>
+                            <span id="courseLevel">-</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Category:</strong>
+                            <span id="courseCategory">-</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Instructor:</strong>
+                            <span id="courseInstructor">-</span>
+                        </div>
+                    </div>
+                    <button class="cta-button enroll-btn">Enroll Now</button>
+                    <a href="courses.html" class="back-link">← Back to Courses</a>
+                </aside>
 
-            <section class="filters-section">
-                <div class="filters glass">
-                    <div class="filter-group">
-                        <label for="categoryFilter">Category:</label>
-                        <select id="categoryFilter">
-                            <option value="all">All Categories</option>
-                            <option value="programming">Programming</option>
-                            <option value="networks">Networks</option>
-                            <option value="security">Security</option>
-                            <option value="databases">Databases</option>
-                        </select>
+                <article class="course-main-content glass" id="courseContent">
+                    <div class="course-header">
+                        <h1 id="courseTitle">Course Title</h1>
+                        <p class="course-meta" id="courseMeta">Loading...</p>
                     </div>
-                    <div class="filter-group">
-                        <label for="levelFilter">Level:</label>
-                        <select id="levelFilter">
-                            <option value="all">All Levels</option>
-                            <option value="beginner">Beginner</option>
-                            <option value="intermediate">Intermediate</option>
-                            <option value="advanced">Advanced</option>
-                        </select>
+                    
+                    <div class="course-image">
+                        <img id="courseImage" src="assets/img/thumbnails/placeholder.jpg" alt="Course thumbnail">
                     </div>
-                    <div class="filter-group">
-                        <label for="searchInput">Search:</label>
-                        <input type="text" id="searchInput" placeholder="Search courses...">
-                    </div>
-                </div>
-            </section>
 
-            <section class="courses-list-section">
-                <div class="courses-grid" id="coursesList">
-                </div>
-                <div id="noResults" class="no-results" style="display: none;">
-                    <p>No courses found matching your criteria.</p>
-                </div>
-            </section>
+                    <div class="course-description">
+                        <h2>About This Course</h2>
+                        <p id="courseDescription">Loading course description...</p>
+                    </div>
+
+                    <div class="course-objectives">
+                        <h2>What You'll Learn</h2>
+                        <ul id="courseObjectives">
+                            <li>Loading objectives...</li>
+                        </ul>
+                    </div>
+
+                    <div class="course-curriculum">
+                        <h2>Course Curriculum</h2>
+                        <div id="courseCurriculum">
+                            <p>Loading curriculum...</p>
+                        </div>
+                    </div>
+
+                    <div class="course-requirements">
+                        <h2>Requirements</h2>
+                        <ul id="courseRequirements">
+                            <li>Loading requirements...</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
         </div>
     </main>
 
@@ -128,6 +150,7 @@
     <script src="assets/js/data/courses.js"></script>
     <script src="assets/js/ui/menu.js"></script>
     <script src="assets/js/ui/responsive.js"></script>
+    <script src="assets/js/ui/modal.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

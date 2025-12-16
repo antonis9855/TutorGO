@@ -1,5 +1,169 @@
 <!DOCTYPE html>
-<html>
-<!-- dfgdn -->
-<!-- dfgdn -->
-</html> ?
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorGo - E-Learning Platform for Computer Science</title>
+    
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav class="glass">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 48 48" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="5" opacity="0.9"/>
+                            <circle cx="32" cy="16" r="4" opacity="0.8"/>
+                            <circle cx="16" cy="32" r="4" opacity="0.7"/>
+                            <circle cx="32" cy="32" r="5" opacity="0.85"/>
+                            <circle cx="24" cy="8" r="2" opacity="1"/>
+                            <circle cx="8" cy="24" r="2" opacity="0.9"/>
+                            <circle cx="40" cy="24" r="2" opacity="0.9"/>
+                            <circle cx="24" cy="40" r="2" opacity="1"/>
+                        </svg>
+                    </div>
+                    <span>TutorGo</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="books.html">Books</a>
+                    <a href="register.html">Register</a>
+                    <a href="about.html">About</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero glass">
+                <div class="hero-content">
+                    <h1>Learn Computer Science with TutorGo</h1>
+                    <p>Master programming, networks, security, and databases with our comprehensive online courses. Start your journey to becoming a skilled developer today.</p>
+                    <a href="courses.html" class="cta-button">Explore Courses</a>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/img/hero-image.jpg" alt="Student learning programming">
+                </div>
+            </section>
+
+            <section class="categories-section">
+                <h2>Course Categories</h2>
+                <div class="categories-grid">
+                    <div class="category-card glass">
+                        <div class="category-icon">💻</div>
+                        <h3>Programming</h3>
+                        <p>Learn Python, Java, C++, JavaScript and more. From basics to advanced concepts.</p>
+                        <a href="courses.html?category=programming">View Courses</a>
+                    </div>
+                    
+                    <div class="category-card glass">
+                        <div class="category-icon">🌐</div>
+                        <h3>Networks</h3>
+                        <p>Master TCP/IP, network security, cloud computing and networking fundamentals.</p>
+                        <a href="courses.html?category=networks">View Courses</a>
+                    </div>
+                    
+                    <div class="category-card glass">
+                        <div class="category-icon">🔒</div>
+                        <h3>Security</h3>
+                        <p>Cybersecurity, cryptography, ethical hacking and secure coding practices.</p>
+                        <a href="courses.html?category=security">View Courses</a>
+                    </div>
+
+                    <div class="category-card glass">
+                        <div class="category-icon">🗄️</div>
+                        <h3>Databases</h3>
+                        <p>SQL, NoSQL, data modeling and database administration skills.</p>
+                        <a href="courses.html?category=databases">View Courses</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="featured-section">
+                <h2>Featured Courses</h2>
+                <div class="courses-grid" id="featuredCourses">
+                </div>
+            </section>
+
+            <section class="why-tutorgo">
+                <h2>Why Choose TutorGo?</h2>
+                <div class="features-grid">
+                    <div class="feature-card glass">
+                        <div class="feature-icon">📚</div>
+                        <h3>Quality Content</h3>
+                        <p>Carefully curated courses created by industry experts</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Learn at Your Pace</h3>
+                        <p>Study whenever and wherever you want</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <div class="feature-icon">🎓</div>
+                        <h3>Certificates</h3>
+                        <p>Earn certificates upon course completion</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <div class="feature-icon">💼</div>
+                        <h3>Career Ready</h3>
+                        <p>Build practical skills for real-world jobs</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="glass">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TutorGo</h4>
+                    <p>Your path to mastering computer science</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="courses.html">Courses</a>
+                    <a href="books.html">Books</a>
+                    <a href="about.html">About Us</a>
+                    <a href="register.html">Sign Up</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@tutorgo.com</p>
+                    <p>Phone: +30 123 456 7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TutorGo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/data/courses.js"></script>
+    <script src="assets/js/data/books.js"></script>
+    <script src="assets/js/ui/menu.js"></script>
+    <script src="assets/js/ui/responsive.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
